@@ -6,6 +6,7 @@ class Token < ActiveRecord::Base
   	DateTime.now < self.expires_at
   end
 
+
   private
   def generate_token
   	begin
